@@ -77,10 +77,10 @@ def read_model():
         factor_vals.append([next_float() for i in range(next_int())])
 
     # DEBUG
-    #print("Num vars: ",num_vars)
-    #print("Ranges: ",factor.var_ranges)
-    #print("Scopes: ",factor_scopes)
-    #print("Values: ",factor_vals)
+    print("Num vars: ",num_vars)
+    print("Ranges: ",factor.var_ranges)
+    print("Scopes: ",factor_scopes)
+    print("Values: ",factor_vals)
     return [factor.Factor(s,v) for (s,v) in zip(factor_scopes,factor_vals)]
 
 
